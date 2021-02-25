@@ -1,8 +1,6 @@
 import json
-from pathlib import Path
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+from . import BASE_DIR
 
 # Secret settings
 secret = json.loads(open(BASE_DIR / 'secret.json').read())
@@ -64,15 +62,3 @@ AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator', },
     {'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator', },
 ]
-
-# Internationalization
-
-LANGUAGE_CODE = 'en-us'
-TIME_ZONE = 'Asia/Bangkok'
-USE_I18N = True
-USE_L10N = True
-USE_TZ = True
-
-# Static files (CSS, JavaScript, Images)
-
-STATIC_URL = '/static/'
