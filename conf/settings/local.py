@@ -29,6 +29,10 @@ STATICFILES_DIRS = (
     BASE_DIR / 'static',
 )
 
+# Email reports
+
+ADMINS = [('devops', 'dev@withthai.com'), ]
+
 # Media files (Uploaded files)
 
 MEDIA_URL = '/media/'
