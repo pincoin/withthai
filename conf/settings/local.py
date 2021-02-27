@@ -1,8 +1,21 @@
+from django.utils.translation import ugettext_lazy as _
+
 from .base import *
 
 # Internationalization
 
 LANGUAGE_CODE = 'en-us'
+LANGUAGES = [
+    ('ko', _('Korean')),
+    ('th', _('Thai')),
+    ('en', _('English')),
+    ('ja', _('Japanese')),
+    ('zh', _('Chinese')),
+]
+LOCALE_PATHS = (
+    BASE_DIR / 'locale/',
+)
+
 TIME_ZONE = 'Asia/Bangkok'
 USE_I18N = True
 USE_L10N = True
