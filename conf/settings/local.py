@@ -4,7 +4,7 @@ from .base import *
 
 # Internationalization
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ko-kr'
 LANGUAGES = [
     ('ko', _('Korean')),
     ('th', _('Thai')),
@@ -13,7 +13,7 @@ LANGUAGES = [
     ('zh', _('Chinese')),
 ]
 LOCALE_PATHS = (
-    BASE_DIR / 'locale/',
+    BASE_DIR / 'locale',
 )
 
 TIME_ZONE = 'Asia/Bangkok'
