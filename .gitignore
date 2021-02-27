@@ -205,3 +205,5 @@ fabric.properties
 # My project
 secret.json
 conf/settings/production.py
+assets
+media

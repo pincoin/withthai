@@ -1,10 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+{% load static %}
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fafafa">
+    <meta name="description" content="">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
     <title>with thai</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="{% static 'css/conf/base.css' %}">
 </head>
 <body>
-home page
+<section class="section">
+    <div class="container">
+        <h1 class="title">
+            Hello World
+        </h1>
+        <p class="subtitle">
+            With thai
+        </p>
+    </div>
+</section>
 </body>
+<script src="{% static 'js/conf/base.js' %}"></script>
 </html>
