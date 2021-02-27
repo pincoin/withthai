@@ -4,7 +4,7 @@ from .base import *
 
 # Internationalization
 
-LANGUAGE_CODE = 'ko-kr'
+LANGUAGE_CODE = 'en-us'
 LANGUAGES = [
     ('ko', _('Korean')),
     ('th', _('Thai')),
@@ -33,3 +33,14 @@ STATICFILES_DIRS = (
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+
+# Dummy Cache for development
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.dummy.DummyCache',
+        'TIMEOUT': 300,
+        'TIMEOUT_HOUR': 3600,
+        'TIMEOUT_DAY': 86400,
+    }
+}
