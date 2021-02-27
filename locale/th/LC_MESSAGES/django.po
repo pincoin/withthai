@@ -20,24 +20,24 @@ msgstr ""
 
 #: .\conf\settings\local.py:9
 msgid "Korean"
-msgstr ""
+msgstr "ภาษาเกาหลี"
 
 #: .\conf\settings\local.py:10
 msgid "Thai"
-msgstr ""
+msgstr "ภาษาไทย"
 
 #: .\conf\settings\local.py:11
 msgid "English"
-msgstr ""
+msgstr "ภาษาอังกฤษ"
 
 #: .\conf\settings\local.py:12
 msgid "Japanese"
-msgstr ""
+msgstr "ภาษาญี่ปุ่น"
 
 #: .\conf\settings\local.py:13
 msgid "Chinese"
-msgstr ""
+msgstr "ภาษาจีน"
 
 #: .\templates\conf\home.html:24
 msgid "WITH THAI"
-msgstr ""
+msgstr "วิธไทย"
