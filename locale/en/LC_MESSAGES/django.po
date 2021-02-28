@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-27 23:33+0700\n"
+"POT-Creation-Date: 2021-02-28 17:38+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,6 +38,96 @@ msgstr ""
 msgid "Chinese"
 msgstr ""
 
-#: .\templates\conf\home.html:24
+#: .\templates\conf\home.html:35 .\templates\conf\home.html:37
 msgid "WITH THAI"
+msgstr ""
+
+#: .\templates\conf\home.html:48
+msgid "GOLF"
+msgstr ""
+
+#: .\templates\conf\home.html:51
+msgid "HOTEL"
+msgstr ""
+
+#: .\templates\conf\home.html:54
+msgid "HOT DEALS"
+msgstr ""
+
+#: .\templates\conf\home.html:57
+msgid "PROMOTIONS"
+msgstr ""
+
+#: .\templates\conf\home.html:60
+msgid "MAGAZINE"
+msgstr ""
+
+#: .\templates\conf\home.html:67
+msgid "CART"
+msgstr ""
+
+#: .\templates\conf\home.html:71
+msgid "FAVORITES"
+msgstr ""
+
+#: .\templates\conf\home.html:75
+msgid "HELP"
+msgstr ""
+
+#: .\templates\conf\home.html:79
+msgid "MY PAGE"
+msgstr ""
+
+#: .\templates\conf\home.html:85
+msgid "SIGN OUT"
+msgstr ""
+
+#: .\templates\conf\home.html:90
+msgid "SIGN IN"
+msgstr ""
+
+#: .\templates\conf\home.html:124
+msgid "WITH THAI Co., Ltd."
+msgstr ""
+
+#: .\templates\conf\home.html:127
+msgid ""
+"Ekkamai No. 30 Sukhumvit (settabut) soi. 61 Klongton Nua, Wattana, Bangkok "
+"10110"
+msgstr ""
+
+#: .\templates\conf\home.html:130
+msgid "TAX ID"
+msgstr ""
+
+#: .\templates\conf\home.html:133
+msgid "TAT License"
+msgstr ""
+
+#: .\templates\conf\home.html:140
+msgid "Help"
+msgstr ""
+
+#: .\templates\conf\home.html:144
+msgid "Guide"
+msgstr ""
+
+#: .\templates\conf\home.html:149
+msgid "FAQ/How-to"
+msgstr ""
+
+#: .\templates\conf\home.html:154
+msgid "Terms &amp; Conditions"
+msgstr ""
+
+#: .\templates\conf\home.html:157
+msgid "Privacy Policy"
+msgstr ""
+
+#: .\templates\conf\home.html:162
+msgid "About Us"
+msgstr ""
+
+#: .\templates\conf\home.html:167
+msgid "Contact Us"
 msgstr ""

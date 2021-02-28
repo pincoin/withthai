@@ -1,30 +1,195 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ LANGUAGE_CODE }}">
 {% load static i18n %}
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#fafafa">
-    <meta name="description" content="">
+    <meta name="theme-color" content="#87b842">
+    <meta name="robots" content="index,follow">
+    <meta name="keywords" content="{% block keywords %}{% endblock %}">
+    <meta name="description" content="{% block description %}{% endblock %}">
     <meta property="og:title" content="">
     <meta property="og:type" content="">
     <meta property="og:url" content="">
-    <meta property="og:image" content="">
-    <title>with thai</title>
+    <meta property="og:image" content="https://www.withthai.com{% static 'conf/images/withthai_og_en.png' %}"/>
+    <meta property="og:image:width" content="1024"/>
+    <meta property="og:image:height" content="1024"/>
+    <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+          integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+          crossorigin="anonymous"/>
     <link rel="stylesheet" href="{% static 'css/conf/base.css' %}">
+    <link rel="shortcut icon" href="{% static 'images/conf/favicon_16x16.png' %}">
 </head>
 <body>
-<section class="section">
-    <div class="container">
-        <h1 class="title">
-            Hello World
-        </h1>
-        <p class="subtitle">
-            {% trans 'WITH THAI' %}
-        </p>
+<header>
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a role="button" class="navbar-burger burger" id="icon-burger">
+                    <i class="fas fa-bars fa-fw"></i>
+                </a>
+                <a class="navbar-item" href="{% url 'home' %}">
+                    {% if LANGUAGE_CODE == 'ko' %}
+                        <img src="{% static 'images/conf/withthai_logo_ko.png' %}" alt="{% trans 'WITH THAI' %}">
+                    {% else %}
+                        <img src="{% static 'images/conf/withthai_logo_en.png' %}" alt="{% trans 'WITH THAI' %}">
+                    {% endif %}
+                </a>
+                <a role="button" class="navbar-burger burger" id="icon-search">
+                    <i class="far fa-address-card fa-fw"></i>
+                </a>
+            </div>
+
+            <div class="navbar-menu">
+                <div class="navbar-start">
+                    <a href="#" class="navbar-item">
+                        {% trans 'GOLF' %}
+                    </a>
+                    <a href="#" class="navbar-item">
+                        {% trans 'HOTEL' %}
+                    </a>
+                    <a href="#" class="navbar-item">
+                        {% trans 'HOT DEALS' %}
+                    </a>
+                    <a href="#" class="is-hidden">
+                        {% trans 'PROMOTIONS' %}
+                    </a>
+                    <a href="#" class="navbar-item">
+                        {% trans 'MAGAZINE' %}
+                    </a>
+                </div>
+
+                <div class="navbar-end">
+                    <a href="#" class="navbar-item">
+                        <span class="icon"><i class="fas fa-passport fa-fw"></i></span>
+                        <span>{% trans 'CART' %}</span>
+                    </a>
+                    <a href="#" class="navbar-item">
+                        <span class="icon"><i class="fas fa-heart fa-fw"></i></span>
+                        <span>{% trans 'FAVORITES' %}</span>
+                    </a>
+                    <a href="#" class="navbar-item">
+                        <span class="icon"><i class="fas fa-info-circle fa-fw"></i></span>
+                        <span>{% trans 'HELP' %}</span>
+                    </a>
+                    <a href="#" class="navbar-item">
+                        <span class="icon"><i class="fas fa-user-cog fa-fw"></i></span>
+                        <span>{% trans 'MY PAGE' %}</span>
+                    </a>
+
+                    {% if user.is_authenticated %}
+                        <a href="#" class="navbar-item">
+                            <span class="icon"><i class="fas fa-sign-out-alt fa-fw"></i></span>
+                            <span>{% trans 'SIGN OUT' %}</span>
+                        </a>
+                    {% else %}
+                        <a href="#" class="navbar-item">
+                            <span class="icon"><i class="fas fa-sign-in-alt fa-fw"></i></span>
+                            <span>{% trans 'SIGN IN' %}</span>
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+{% if messages %}
+    <div class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-full">
+                    {% for message in messages %}
+                        <article class="message
+                {% if message.tags == 'error' %}is-danger
+                {% elif message.tags == 'warning' %}is-warning
+                {% elif message.tags == 'success' %}is-success
+                {% else %}is-primary{% endif %}">
+                            <div class="message-body">{{ message }}</div>
+                        </article>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
     </div>
-</section>
+{% endif %}
+{% block main %}
+{% endblock %}
+<footer>
+    <div class="section footer-info">
+        <div class="container">
+            <div class="columns is-multiline">
+                <div class="column is-full-mobile is-two-thirds-desktop">
+                    <h4 class="footer-info-heading">{% trans 'WITH THAI Co., Ltd.' %}</h4>
+                    <ul class="footer-info-list">
+                        <li>
+                            {% trans 'Ekkamai No. 30 Sukhumvit (settabut) soi. 61 Klongton Nua, Wattana, Bangkok 10110' %}
+                        </li>
+                        <li>
+                            {% trans 'TAX ID' %}: 0105563049000
+                        </li>
+                        <li>
+                            {% trans 'TAT License' %}: 14/03216
+                        </li>
+                        <li>(+66) 080-023-3602</li>
+                        <li>help@withthai.com</li>
+                    </ul>
+                </div>
+                <div class="column is-full-mobile is-one-third-desktop">
+                    <h4 class="footer-info-heading">{% trans "Help" %}</h4>
+                    <ul class="footer-info-list">
+                        <li>
+                            <a href="#">
+                                {% trans 'Guide' %}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                {% trans 'FAQ/How-to' %}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                {% trans 'Terms &amp; Conditions' %}
+                            </a> &middot;
+                            <a href="#">
+                                {% trans 'Privacy Policy' %}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                {% trans 'About Us' %}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                {% trans 'Contact Us' %}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section footer-copyright">
+        <div class="container">
+            <div class="columns is-multiline">
+                <div class="column is-full-mobile is-half-desktop has-text-centered-mobile has-text-right-desktop">
+                    Copyright &copy {% now 'Y' %} withthai.com
+                </div>
+                <div class="column is-full-mobile is-half-desktop has-text-centered-mobile">
+                    All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+{% block javascript %}
+    <script type="text/javascript" src="{% static 'conf/js/jquery-3.4.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'conf/js/main.js' %}"></script>
+{% endblock %}
 </body>
 <script src="{% static 'js/conf/base.js' %}"></script>
 </html>

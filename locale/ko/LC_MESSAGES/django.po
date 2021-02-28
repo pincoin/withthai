@@ -3,12 +3,11 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-27 23:33+0700\n"
+"POT-Creation-Date: 2021-02-28 17:38+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,6 +37,98 @@ msgstr "일본어"
 msgid "Chinese"
 msgstr "중국어"
 
-#: .\templates\conf\home.html:24
+#: .\templates\conf\home.html:35 .\templates\conf\home.html:37
 msgid "WITH THAI"
 msgstr "위드타이"
+
+#: .\templates\conf\home.html:48
+msgid "GOLF"
+msgstr "골프"
+
+#: .\templates\conf\home.html:51
+msgid "HOTEL"
+msgstr "호텔"
+
+#: .\templates\conf\home.html:54
+msgid "HOT DEALS"
+msgstr "핫딜"
+
+#: .\templates\conf\home.html:57
+msgid "PROMOTIONS"
+msgstr "프로모션"
+
+#: .\templates\conf\home.html:60
+msgid "MAGAZINE"
+msgstr "매거진"
+
+#: .\templates\conf\home.html:67
+msgid "CART"
+msgstr "장바구니"
+
+#: .\templates\conf\home.html:71
+msgid "FAVORITES"
+msgstr "찜한목록"
+
+#: .\templates\conf\home.html:75
+msgid "HELP"
+msgstr "도움말"
+
+#: .\templates\conf\home.html:79
+msgid "MY PAGE"
+msgstr "마이페이지"
+
+#: .\templates\conf\home.html:85
+msgid "SIGN OUT"
+msgstr "로그아웃"
+
+#: .\templates\conf\home.html:90
+msgid "SIGN IN"
+msgstr "로그인"
+
+#: .\templates\conf\home.html:124
+msgid "WITH THAI Co., Ltd."
+msgstr "위드타이 주식회사"
+
+#: .\templates\conf\home.html:127
+msgid ""
+"Ekkamai No. 30 Sukhumvit (settabut) soi. 61 Klongton Nua, Wattana, Bangkok "
+"10110"
+msgstr ""
+"Ekkamai No. 30 Sukhumvit (settabut) soi. 61 Klongton Nua, Wattana, Bangkok "
+"10110"
+
+#: .\templates\conf\home.html:130
+msgid "TAX ID"
+msgstr "법인등록번호"
+
+#: .\templates\conf\home.html:133
+msgid "TAT License"
+msgstr "관광사업자 등록번호"
+
+#: .\templates\conf\home.html:140
+msgid "Help"
+msgstr "도움말"
+
+#: .\templates\conf\home.html:144
+msgid "Guide"
+msgstr "이용가이드"
+
+#: .\templates\conf\home.html:149
+msgid "FAQ/How-to"
+msgstr "자주묻는질문"
+
+#: .\templates\conf\home.html:154
+msgid "Terms &amp; Conditions"
+msgstr "이용약관"
+
+#: .\templates\conf\home.html:157
+msgid "Privacy Policy"
+msgstr "개인정보처리방침"
+
+#: .\templates\conf\home.html:162
+msgid "About Us"
+msgstr "위드타이 소개"
+
+#: .\templates\conf\home.html:167
+msgid "Contact Us"
+msgstr "문의하기"
