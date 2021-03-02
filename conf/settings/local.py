@@ -4,13 +4,13 @@ from .base import *
 
 # Internationalization
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en'
 LANGUAGES = [
     ('ko', _('Korean')),
     ('th', _('Thai')),
     ('en', _('English')),
     ('ja', _('Japanese')),
-    ('zh', _('Chinese')),
+    ('zh-cn', _('Chinese')),
 ]
 LOCALE_PATHS = (
     BASE_DIR / 'locale',

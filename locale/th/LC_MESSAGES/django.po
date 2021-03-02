@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-28 17:38+0700\n"
+"POT-Creation-Date: 2021-02-28 21:46+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,94 +42,88 @@ msgstr "ภาษาจีน"
 msgid "WITH THAI"
 msgstr "วิธไทย"
 
-#: .\templates\conf\home.html:48
+#: .\templates\conf\home.html:49
 msgid "GOLF"
 msgstr ""
 
-#: .\templates\conf\home.html:51
+#: .\templates\conf\home.html:52
 msgid "HOTEL"
 msgstr ""
 
-#: .\templates\conf\home.html:54
-msgid "HOT DEALS"
+#: .\templates\conf\home.html:55
+msgid "LIMOUSINE"
 msgstr ""
 
-#: .\templates\conf\home.html:57
-msgid "PROMOTIONS"
-msgstr ""
-
-#: .\templates\conf\home.html:60
+#: .\templates\conf\home.html:58
 msgid "MAGAZINE"
 msgstr ""
 
-#: .\templates\conf\home.html:67
+#: .\templates\conf\home.html:65
 msgid "CART"
 msgstr ""
 
-#: .\templates\conf\home.html:71
+#: .\templates\conf\home.html:69
 msgid "FAVORITES"
 msgstr ""
 
-#: .\templates\conf\home.html:75
+#: .\templates\conf\home.html:73
 msgid "HELP"
 msgstr ""
 
-#: .\templates\conf\home.html:79
+#: .\templates\conf\home.html:77
 msgid "MY PAGE"
 msgstr ""
 
-#: .\templates\conf\home.html:85
+#: .\templates\conf\home.html:83
 msgid "SIGN OUT"
 msgstr ""
 
-#: .\templates\conf\home.html:90
+#: .\templates\conf\home.html:88
 msgid "SIGN IN"
 msgstr ""
 
-#: .\templates\conf\home.html:124
+#: .\templates\conf\home.html:122
 #, fuzzy
 #| msgid "WITH THAI"
 msgid "WITH THAI Co., Ltd."
 msgstr "วิธไทย"
 
-#: .\templates\conf\home.html:127
-msgid ""
-"Ekkamai No. 30 Sukhumvit (settabut) soi. 61 Klongton Nua, Wattana, Bangkok "
-"10110"
+#: .\templates\conf\home.html:125
+msgid "Ekkamai No. 30 Sukhumvit soi. 61 Klongton Nua, Wattana, Bangkok 10110"
 msgstr ""
 
-#: .\templates\conf\home.html:130
+#: .\templates\conf\home.html:128
 msgid "TAX ID"
 msgstr ""
 
-#: .\templates\conf\home.html:133
+#: .\templates\conf\home.html:131
 msgid "TAT License"
 msgstr ""
 
-#: .\templates\conf\home.html:140
+#: .\templates\conf\home.html:138
 msgid "Help"
 msgstr ""
 
-#: .\templates\conf\home.html:144
+#: .\templates\conf\home.html:142
 msgid "Guide"
 msgstr ""
 
-#: .\templates\conf\home.html:149
+#: .\templates\conf\home.html:147
 msgid "FAQ/How-to"
 msgstr ""
 
-#: .\templates\conf\home.html:154
+#: .\templates\conf\home.html:152
 msgid "Terms &amp; Conditions"
 msgstr ""
 
-#: .\templates\conf\home.html:157
+#: .\templates\conf\home.html:155
 msgid "Privacy Policy"
 msgstr ""
 
-#: .\templates\conf\home.html:162
+#: .\templates\conf\home.html:160
 msgid "About Us"
 msgstr ""
 
-#: .\templates\conf\home.html:167
+#: .\templates\conf\home.html:165
 msgid "Contact Us"
 msgstr ""

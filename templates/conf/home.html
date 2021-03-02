@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ LANGUAGE_CODE }}">
 {% load static i18n %}
+
+{% get_current_language as LANGUAGE_CODE %}
+{% get_available_languages as LANGUAGES %}
+{% get_language_info_list for LANGUAGES as languages %}
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,6 +23,13 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
           integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
           crossorigin="anonymous"/>
+    {% if LANGUAGE_CODE == 'th' %}
+        <link rel="stylesheet" href="{% static 'css/conf/sarabun.css' %}">
+    {% elif LANGUAGE_CODE == 'ko' %}
+        <link rel="stylesheet" href="{% static 'css/conf/godo.css' %}">
+    {% else %}
+        <link rel="stylesheet" href="{% static 'css/conf/arvo.css' %}">
+    {% endif %}
     <link rel="stylesheet" href="{% static 'css/conf/base.css' %}">
     <link rel="shortcut icon" href="{% static 'images/conf/favicon_16x16.png' %}">
 </head>
@@ -43,6 +54,7 @@
             </div>
 
             <div class="navbar-menu">
+                <!-- Left top menu on navbar -->
                 <div class="navbar-start">
                     <a href="#" class="navbar-item">
                         {% trans 'GOLF' %}
@@ -51,19 +63,16 @@
                         {% trans 'HOTEL' %}
                     </a>
                     <a href="#" class="navbar-item">
-                        {% trans 'HOT DEALS' %}
-                    </a>
-                    <a href="#" class="is-hidden">
-                        {% trans 'PROMOTIONS' %}
+                        {% trans 'LIMOUSINE' %}
                     </a>
                     <a href="#" class="navbar-item">
                         {% trans 'MAGAZINE' %}
                     </a>
                 </div>
-
+                <!-- Right top menu on navbar -->
                 <div class="navbar-end">
                     <a href="#" class="navbar-item">
-                        <span class="icon"><i class="fas fa-passport fa-fw"></i></span>
+                        <span class="icon"><i class="fas fa-luggage-cart fa-fw"></i></span>
                         <span>{% trans 'CART' %}</span>
                     </a>
                     <a href="#" class="navbar-item">
@@ -117,14 +126,14 @@
 {% block main %}
 {% endblock %}
 <footer>
-    <div class="section footer-info">
+    <div class="section">
         <div class="container">
             <div class="columns is-multiline">
                 <div class="column is-full-mobile is-two-thirds-desktop">
-                    <h4 class="footer-info-heading">{% trans 'WITH THAI Co., Ltd.' %}</h4>
-                    <ul class="footer-info-list">
+                    <h4>{% trans 'WITH THAI Co., Ltd.' %}</h4>
+                    <ul>
                         <li>
-                            {% trans 'Ekkamai No. 30 Sukhumvit (settabut) soi. 61 Klongton Nua, Wattana, Bangkok 10110' %}
+                            {% trans 'Ekkamai No. 30 Sukhumvit soi. 61 Klongton Nua, Wattana, Bangkok 10110' %}
                         </li>
                         <li>
                             {% trans 'TAX ID' %}: 0105563049000
@@ -137,8 +146,8 @@
                     </ul>
                 </div>
                 <div class="column is-full-mobile is-one-third-desktop">
-                    <h4 class="footer-info-heading">{% trans "Help" %}</h4>
-                    <ul class="footer-info-list">
+                    <h4>{% trans 'Help' %}</h4>
+                    <ul>
                         <li>
                             <a href="#">
                                 {% trans 'Guide' %}
@@ -173,7 +182,7 @@
         </div>
     </div>
 
-    <div class="section footer-copyright">
+    <div class="section">
         <div class="container">
             <div class="columns is-multiline">
                 <div class="column is-full-mobile is-half-desktop has-text-centered-mobile has-text-right-desktop">
@@ -187,9 +196,7 @@
     </div>
 </footer>
 {% block javascript %}
-    <script type="text/javascript" src="{% static 'conf/js/jquery-3.4.1.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'conf/js/main.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/conf/base.js' %}"></script>
 {% endblock %}
 </body>
-<script src="{% static 'js/conf/base.js' %}"></script>
 </html>
