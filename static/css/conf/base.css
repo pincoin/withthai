@@ -1,6 +1,5 @@
 /* Sticky footer */
 body {
-    font-family: "Godo";
     display: flex;
     min-height: calc(100vh - 52px);
     flex-direction: column;

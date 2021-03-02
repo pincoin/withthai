@@ -51,7 +51,7 @@ msgstr "호텔"
 
 #: .\templates\conf\home.html:55
 msgid "LIMOUSINE"
-msgstr "리무진"
+msgstr "차량"
 
 #: .\templates\conf\home.html:58
 msgid "MAGAZINE"

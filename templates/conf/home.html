@@ -7,6 +7,7 @@
 {% get_language_info_list for LANGUAGES as languages %}
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#87b842">
     <meta name="robots" content="index,follow">
@@ -19,10 +20,10 @@
     <meta property="og:image:width" content="1024"/>
     <meta property="og:image:height" content="1024"/>
     <title>{% block title %}{% endblock %}</title>
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
           integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
           crossorigin="anonymous"/>
+    <link rel="stylesheet" href="{% static 'css/conf/bulma.css' %}">
     {% if LANGUAGE_CODE == 'th' %}
         <link rel="stylesheet" href="{% static 'css/conf/sarabun.css' %}">
     {% elif LANGUAGE_CODE == 'ko' %}
@@ -124,6 +125,7 @@
     </div>
 {% endif %}
 {% block main %}
+    <main></main>
 {% endblock %}
 <footer>
     <div class="section">
