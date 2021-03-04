@@ -100,6 +100,32 @@
             </div>
         </div>
     </nav>
+    <div class="modal" id="left-sidebar">
+        <div class="modal-background"></div>
+        <div class="modal-content left-sidebar-content">
+            <ul>
+                <li class="submenu-heading">
+                    <a href="{% url 'home' %}">{% trans 'WITH THAI' %}</a>
+                    <a href="#" class="is-pulled-right" id="left-sidebar-close">
+                        <i class="fas fa-times"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="modal" id="right-sidebar">
+        <div class="modal-background"></div>
+        <div class="modal-content right-sidebar-content">
+            <ul>
+                <li class="submenu-heading">
+                    <a href="#">{% trans 'MY WITH THAI' %}</a>
+                    <a href="#" class="is-pulled-right" id="right-sidebar-close">
+                        <i class="fas fa-times"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </header>
 {% if messages %}
     <div class="section">
