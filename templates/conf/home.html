@@ -77,10 +77,6 @@
                         <span>{% trans 'CART' %}</span>
                     </a>
                     <a href="#" class="navbar-item">
-                        <span class="icon"><i class="fas fa-heart fa-fw"></i></span>
-                        <span>{% trans 'FAVORITES' %}</span>
-                    </a>
-                    <a href="#" class="navbar-item">
                         <span class="icon"><i class="fas fa-info-circle fa-fw"></i></span>
                         <span>{% trans 'HELP' %}</span>
                     </a>
@@ -128,11 +124,11 @@
     <main></main>
 {% endblock %}
 <footer>
-    <div class="section">
+    <div class="section footer-info">
         <div class="container">
             <div class="columns is-multiline">
                 <div class="column is-full-mobile is-two-thirds-desktop">
-                    <h4>{% trans 'WITH THAI Co., Ltd.' %}</h4>
+                    <h4 class="footer-info-heading">{% trans 'WITH THAI Co., Ltd.' %}</h4>
                     <ul>
                         <li>
                             {% trans 'Ekkamai No. 30 Sukhumvit soi. 61 Klongton Nua, Wattana, Bangkok 10110' %}
@@ -148,7 +144,7 @@
                     </ul>
                 </div>
                 <div class="column is-full-mobile is-one-third-desktop">
-                    <h4>{% trans 'Help' %}</h4>
+                    <h4 class="footer-info-heading">{% trans 'Help' %}</h4>
                     <ul>
                         <li>
                             <a href="#">
@@ -184,7 +180,7 @@
         </div>
     </div>
 
-    <div class="section">
+    <div class="section footer-copyright">
         <div class="container">
             <div class="columns is-multiline">
                 <div class="column is-full-mobile is-half-desktop has-text-centered-mobile has-text-right-desktop">
