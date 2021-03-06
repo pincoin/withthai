@@ -151,3 +151,19 @@ main {
 .submenu-item a {
     color: #03353e;
 }
+
+@media (min-width: 1024px) {
+    main {
+        padding: 1rem 0;
+    }
+
+    .home-top-section {
+        padding: .6rem 1.5rem 1rem 1.5rem;
+    }
+}
+
+@media (max-width: 1023px) {
+    .home-top-section {
+        padding: 0 1.5rem 1rem 1.5rem;
+    }
+}
