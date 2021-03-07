@@ -173,25 +173,25 @@
                     <h4 class="footer-info-heading">{% trans 'Help' %}</h4>
                     <ul>
                         <li>
-                            <a href="#">
+                            <a href="{% url 'help:guide' %}">
                                 {% trans 'Guide' %}
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="{% url 'help:guide' %}">
                                 {% trans 'FAQ/How-to' %}
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="{% url 'help:terms' %}">
                                 {% trans 'Terms &amp; Conditions' %}
                             </a> &middot;
-                            <a href="#">
+                            <a href="{% url 'help:privacy' %}">
                                 {% trans 'Privacy Policy' %}
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="{% url 'help:about' %}">
                                 {% trans 'About Us' %}
                             </a>
                         </li>
