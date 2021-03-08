@@ -9,6 +9,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const rightSidebarClose = document.getElementById('right-sidebar-close');
     const rightSidebarModalBackground = document.querySelector('#right-sidebar .modal-background');
 
+    // Setup our function to run on various events
+    let subScrollHeight = function (event) {
+        if (window.innerWidth < 960) {
+            let h = window.innerHeight;
+
+            let submenuScroll = document.querySelector('.submenu-scroll');
+
+            // 37 + 52.5 + 37 + 39 = 165.5
+            submenuScroll.style.maxHeight = submenuScroll.style.minHeight = h - 165.5 + 'px';
+        }
+    };
+
+    ['load', 'resize'].forEach(element => {
+        window.addEventListener(element, subScrollHeight, false);
+    });
+
     // Top navbar box shadow when scrolled down
     window
         .addEventListener('scroll', function (e) {

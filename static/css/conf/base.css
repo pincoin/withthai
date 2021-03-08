@@ -165,6 +165,19 @@ main {
         color: #03353e;
     }
 
+    .submenu-scroll {
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .submenu-bottom .columns .column {
+        padding: .5rem !important;
+    }
+
+    .submenu-bottom-active {
+        border-bottom: 4px solid #e88f2f;
+    }
+
     .home-top-section {
         padding: 0 1.5rem 1rem 1.5rem;
     }
