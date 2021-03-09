@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-28 21:46+0700\n"
+"POT-Creation-Date: 2021-03-09 09:45+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,90 +37,117 @@ msgstr "일본어"
 msgid "Chinese"
 msgstr "중국어"
 
-#: .\templates\conf\home.html:35 .\templates\conf\home.html:37
+#: .\golf\apps.py:7
+msgid "golf"
+msgstr "골프"
+
+#: .\help\apps.py:7
+msgid "help"
+msgstr "도움"
+
+#: .\templates\conf\base.html:49 .\templates\conf\base.html:51
+#: .\templates\conf\base.html:110 .\templates\conf\home.html:5
+#: .\templates\help\about.html:5 .\templates\help\guide.html:5
+#: .\templates\help\privacy.html:5 .\templates\help\terms.html:5
 msgid "WITH THAI"
 msgstr "위드타이"
 
-#: .\templates\conf\home.html:49
+#: .\templates\conf\base.html:63 .\templates\conf\base.html:122
+#: .\templates\conf\base.html:147
 msgid "GOLF"
 msgstr "골프"
 
-#: .\templates\conf\home.html:52
+#: .\templates\conf\base.html:66 .\templates\conf\base.html:152
 msgid "HOTEL"
 msgstr "호텔"
 
-#: .\templates\conf\home.html:55
+#: .\templates\conf\base.html:69 .\templates\conf\base.html:157
 msgid "LIMOUSINE"
 msgstr "차량"
 
-#: .\templates\conf\home.html:58
-msgid "MAGAZINE"
-msgstr "매거진"
+#: .\templates\conf\base.html:72 .\templates\conf\base.html:162
+msgid "COMMUNITY"
+msgstr "커뮤니티"
 
-#: .\templates\conf\home.html:65
+#: .\templates\conf\base.html:79
 msgid "CART"
 msgstr "장바구니"
 
-#: .\templates\conf\home.html:69
-msgid "FAVORITES"
-msgstr "찜한목록"
-
-#: .\templates\conf\home.html:73
+#: .\templates\conf\base.html:83
 msgid "HELP"
 msgstr "도움말"
 
-#: .\templates\conf\home.html:77
+#: .\templates\conf\base.html:87
 msgid "MY PAGE"
 msgstr "마이페이지"
 
-#: .\templates\conf\home.html:83
+#: .\templates\conf\base.html:93
 msgid "SIGN OUT"
 msgstr "로그아웃"
 
-#: .\templates\conf\home.html:88
+#: .\templates\conf\base.html:98
 msgid "SIGN IN"
 msgstr "로그인"
 
-#: .\templates\conf\home.html:122
+#: .\templates\conf\base.html:117
+msgid "Search..."
+msgstr "검색"
+
+#: .\templates\conf\base.html:175
+#| msgid "WITH THAI"
+msgid "MY WITH THAI"
+msgstr "마이페이지"
+
+#: .\templates\conf\base.html:209
 msgid "WITH THAI Co., Ltd."
 msgstr "위드타이 주식회사"
 
-#: .\templates\conf\home.html:125
+#: .\templates\conf\base.html:212
 msgid "Ekkamai No. 30 Sukhumvit soi. 61 Klongton Nua, Wattana, Bangkok 10110"
 msgstr "Ekkamai No. 30 Sukhumvit soi. 61 Klongton Nua, Wattana, Bangkok 10110"
 
-#: .\templates\conf\home.html:128
+#: .\templates\conf\base.html:215
 msgid "TAX ID"
 msgstr "법인등록번호"
 
-#: .\templates\conf\home.html:131
+#: .\templates\conf\base.html:218
 msgid "TAT License"
 msgstr "관광사업자 등록번호"
 
-#: .\templates\conf\home.html:138
+#: .\templates\conf\base.html:225
 msgid "Help"
 msgstr "도움말"
 
-#: .\templates\conf\home.html:142
+#: .\templates\conf\base.html:229
 msgid "Guide"
 msgstr "이용가이드"
 
-#: .\templates\conf\home.html:147
+#: .\templates\conf\base.html:234
 msgid "FAQ/How-to"
 msgstr "자주묻는질문"
 
-#: .\templates\conf\home.html:152
+#: .\templates\conf\base.html:239
 msgid "Terms &amp; Conditions"
 msgstr "이용약관"
 
-#: .\templates\conf\home.html:155
+#: .\templates\conf\base.html:242
 msgid "Privacy Policy"
 msgstr "개인정보처리방침"
 
-#: .\templates\conf\home.html:160
+#: .\templates\conf\base.html:247
 msgid "About Us"
 msgstr "위드타이 소개"
 
-#: .\templates\conf\home.html:165
+#: .\templates\conf\base.html:252
 msgid "Contact Us"
 msgstr "문의하기"
+
+#: .\templates\conf\home.html:5 .\templates\help\about.html:5
+#: .\templates\help\guide.html:5 .\templates\help\privacy.html:5
+#: .\templates\help\terms.html:5
+msgid "Make your own stories WITH THAI."
+msgstr "위드타이에서 여러분의 이야기를 만드세요."
+
+#: .\templates\conf\home.html:13
+msgid "Most Popular Golf Clubs"
+msgstr "인기 골프장"
