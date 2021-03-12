@@ -3,6 +3,8 @@ from django.urls import reverse
 from django.utils.safestring import mark_safe
 from django.utils.translation import gettext_lazy as _
 
+from . import models
+
 
 class AreaAdmin(admin.ModelAdmin):
     list_display = ('title_english', 'title_thai', 'title_korean', 'slug', 'position')
@@ -39,3 +41,9 @@ class ClubAdmin(admin.ModelAdmin):
         ))
 
     club_link.short_description = _('Golf club')
+
+
+admin.site.register(models.Area, AreaAdmin)
+admin.site.register(models.Province, ProvinceAdmin)
+admin.site.register(models.District, DistrictAdmin)
+admin.site.register(models.Club, ClubAdmin)

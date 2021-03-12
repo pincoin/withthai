@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-09 09:45+0700\n"
+"POT-Creation-Date: 2021-03-12 16:04+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,8 +37,213 @@ msgstr ""
 msgid "Chinese"
 msgstr ""
 
+#: .\golf\admin.py:43 .\golf\models.py:320
+msgid "Golf club"
+msgstr ""
+
 #: .\golf\apps.py:7
 msgid "golf"
+msgstr ""
+
+#: .\golf\models.py:9
+msgid "Area english name"
+msgstr ""
+
+#: .\golf\models.py:14
+msgid "Area Thai name"
+msgstr ""
+
+#: .\golf\models.py:19
+msgid "Area Korean name"
+msgstr ""
+
+#: .\golf\models.py:24 .\golf\models.py:63 .\golf\models.py:109
+#: .\golf\models.py:170
+msgid "Slug"
+msgstr ""
+
+#: .\golf\models.py:25 .\golf\models.py:64 .\golf\models.py:110
+#: .\golf\models.py:171
+msgid ""
+"A short label containing only letters, numbers, underscores or hyphens for "
+"URL"
+msgstr ""
+
+#: .\golf\models.py:33 .\golf\models.py:79 .\golf\models.py:125
+#: .\golf\models.py:307
+msgid "Position"
+msgstr ""
+
+#: .\golf\models.py:39
+msgid "Area"
+msgstr ""
+
+#: .\golf\models.py:40
+msgid "Areas"
+msgstr ""
+
+#: .\golf\models.py:48
+msgid "Province English name"
+msgstr ""
+
+#: .\golf\models.py:53
+msgid "Province Thai name"
+msgstr ""
+
+#: .\golf\models.py:58
+msgid "Province Korean name"
+msgstr ""
+
+#: .\golf\models.py:73
+msgid "Location area"
+msgstr ""
+
+#: .\golf\models.py:85 .\golf\models.py:119
+msgid "Province"
+msgstr ""
+
+#: .\golf\models.py:86
+msgid "Provinces"
+msgstr ""
+
+#: .\golf\models.py:94
+msgid "District English name"
+msgstr ""
+
+#: .\golf\models.py:99
+msgid "District Thai name"
+msgstr ""
+
+#: .\golf\models.py:104
+msgid "District Korean name"
+msgstr ""
+
+#: .\golf\models.py:131 .\golf\models.py:180
+msgid "District"
+msgstr ""
+
+#: .\golf\models.py:132
+msgid "Districts"
+msgstr ""
+
+#: .\golf\models.py:140
+msgid "18 Holes"
+msgstr ""
+
+#: .\golf\models.py:141
+msgid "9 Holes"
+msgstr ""
+
+#: .\golf\models.py:142
+msgid "27 Holes"
+msgstr ""
+
+#: .\golf\models.py:143
+msgid "36 Holes"
+msgstr ""
+
+#: .\golf\models.py:147
+msgid "Club open"
+msgstr ""
+
+#: .\golf\models.py:148
+msgid "Club closed"
+msgstr ""
+
+#: .\golf\models.py:152
+msgid "Golf club English name"
+msgstr ""
+
+#: .\golf\models.py:158
+msgid "Golf club Thai name"
+msgstr ""
+
+#: .\golf\models.py:164
+msgid "Golf club Korean name"
+msgstr ""
+
+#: .\golf\models.py:186
+msgid "Phone number"
+msgstr ""
+
+#: .\golf\models.py:193
+msgid "Email address"
+msgstr ""
+
+#: .\golf\models.py:200
+msgid "Fax number"
+msgstr ""
+
+#: .\golf\models.py:207
+msgid "Website"
+msgstr ""
+
+#: .\golf\models.py:214
+msgid "Golf club address"
+msgstr ""
+
+#: .\golf\models.py:221
+msgid "No. of holes"
+msgstr ""
+
+#: .\golf\models.py:228
+msgid "Start from"
+msgstr ""
+
+#: .\golf\models.py:231 .\golf\models.py:239 .\golf\models.py:247
+msgid "THB"
+msgstr ""
+
+#: .\golf\models.py:236
+msgid "Caddie fee"
+msgstr ""
+
+#: .\golf\models.py:244
+msgid "Cart fee"
+msgstr ""
+
+#: .\golf\models.py:252
+msgid "Max PAX"
+msgstr ""
+
+#: .\golf\models.py:257
+msgid "Require golf cart"
+msgstr ""
+
+#: .\golf\models.py:263
+msgid "Require golf cart on holidays"
+msgstr ""
+
+#: .\golf\models.py:269
+msgid "Weekdays minimum in advance"
+msgstr ""
+
+#: .\golf\models.py:275
+msgid "Weekdays maximum in advance"
+msgstr ""
+
+#: .\golf\models.py:281
+msgid "Weekend minimum in advance"
+msgstr ""
+
+#: .\golf\models.py:287
+msgid "Weekend maximum in advance"
+msgstr ""
+
+#: .\golf\models.py:293
+msgid "Latitude"
+msgstr ""
+
+#: .\golf\models.py:300
+msgid "Longitude"
+msgstr ""
+
+#: .\golf\models.py:313
+msgid "Club status"
+msgstr ""
+
+#: .\golf\models.py:321
+msgid "Golf clubs"
 msgstr ""
 
 #: .\help\apps.py:7
