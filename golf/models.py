@@ -304,6 +304,12 @@ class Club(model_utils_models.TimeStampedModel):
         db_index=True,
     )
 
+    cart_on_fairway = models.BooleanField(
+        verbose_name=_('Cart on fairway'),
+        default=False,
+        db_index=True,
+    )
+
     weekdays_min_in_advance = models.IntegerField(
         verbose_name=_('Weekdays minimum in advance'),
         default=1,
