@@ -248,6 +248,27 @@ class Club(model_utils_models.TimeStampedModel):
         db_index=True,
     )
 
+    par = models.IntegerField(
+        verbose_name=_('Par'),
+        default=72,
+        blank=True,
+        null=True,
+    )
+
+    yardage = models.IntegerField(
+        verbose_name=_('Total yardage'),
+        default=0,
+        blank=True,
+        null=True,
+    )
+
+    designer = models.CharField(
+        verbose_name=_('Course designer'),
+        max_length=255,
+        blank=True,
+        null=True,
+    )
+
     green_fee_selling_price = models.DecimalField(
         verbose_name=_('Start from'),
         max_digits=11,
