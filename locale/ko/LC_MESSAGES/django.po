@@ -108,11 +108,11 @@ msgstr "구(영문)"
 
 #: .\golf\models.py:99
 msgid "District Thai name"
-msgstr "구(영문)"
+msgstr "구(태국어)"
 
 #: .\golf\models.py:104
 msgid "District Korean name"
-msgstr "구(영문)"
+msgstr "구(한국어)"
 
 #: .\golf\models.py:131 .\golf\models.py:180
 msgid "District"
