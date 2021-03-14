@@ -217,6 +217,30 @@ class Club(model_utils_models.TimeStampedModel):
         null=True,
     )
 
+    distance_from_downtown = models.IntegerField(
+        verbose_name=_('Distance from downtown'),
+        blank=True,
+        null=True,
+    )
+
+    estimated_time_from_downtown = models.IntegerField(
+        verbose_name=_('Estimated time from downtown'),
+        blank=True,
+        null=True,
+    )
+
+    distance_from_airport = models.IntegerField(
+        verbose_name=_('Distance from airport'),
+        blank=True,
+        null=True,
+    )
+
+    estimated_time_from_airport = models.IntegerField(
+        verbose_name=_('Estimated time from airport'),
+        blank=True,
+        null=True,
+    )
+
     hole = models.IntegerField(
         verbose_name=_('No. of holes'),
         choices=HOLE_CHOICES,

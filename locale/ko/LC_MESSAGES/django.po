@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-14 14:41+0700\n"
+"POT-Creation-Date: 2021-03-14 15:19+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,10 +36,6 @@ msgstr "일본어"
 #: .\conf\settings\local.py:13
 msgid "Chinese"
 msgstr "중국어"
-
-#: .\golf\admin.py:43 .\golf\models.py:335
-msgid "Golf club"
-msgstr ""
 
 #: .\golf\apps.py:7
 msgid "golf"
@@ -70,7 +66,7 @@ msgid ""
 msgstr "영문, 숫자, 밑줄, 하이픈으로 이루어진 짧은 URL"
 
 #: .\golf\models.py:33 .\golf\models.py:79 .\golf\models.py:125
-#: .\golf\models.py:322
+#: .\golf\models.py:346
 msgid "Position"
 msgstr "위치"
 
@@ -183,78 +179,98 @@ msgid "Golf club address"
 msgstr "골프장주소"
 
 #: .\golf\models.py:221
+msgid "Distance from downtown"
+msgstr "시내에서 거리"
+
+#: .\golf\models.py:227
+msgid "Estimated time from downtown"
+msgstr "시내에서 이동시간"
+
+#: .\golf\models.py:233
+msgid "Distance from airport"
+msgstr "공항에서 거리"
+
+#: .\golf\models.py:239
+msgid "Estimated time from airport"
+msgstr "공항에서 이동시간"
+
+#: .\golf\models.py:245
 msgid "No. of holes"
 msgstr "홀수"
 
-#: .\golf\models.py:228
+#: .\golf\models.py:252
 msgid "Start from"
 msgstr "시작가"
 
-#: .\golf\models.py:231 .\golf\models.py:239 .\golf\models.py:247
+#: .\golf\models.py:255 .\golf\models.py:263 .\golf\models.py:271
 msgid "THB"
 msgstr "바트"
 
-#: .\golf\models.py:236
+#: .\golf\models.py:260
 msgid "Caddie fee"
 msgstr "캐디피"
 
-#: .\golf\models.py:244
+#: .\golf\models.py:268
 msgid "Cart fee"
 msgstr "카트피"
 
-#: .\golf\models.py:252
+#: .\golf\models.py:276
 msgid "Weekday minimum PAX"
 msgstr "평일 최소인원"
 
-#: .\golf\models.py:257
+#: .\golf\models.py:281
 msgid "Weekday maximum PAX"
 msgstr "평일 최대인원"
 
-#: .\golf\models.py:262
+#: .\golf\models.py:286
 msgid "holiday minimum PAX"
 msgstr "휴일 최소인원"
 
-#: .\golf\models.py:267
+#: .\golf\models.py:291
 msgid "holiday maximum PAX"
 msgstr "휴일 최대인원"
 
-#: .\golf\models.py:272
+#: .\golf\models.py:296
 msgid "Require golf cart"
 msgstr "카트 의무"
 
-#: .\golf\models.py:278
+#: .\golf\models.py:302
 msgid "Require golf cart on holidays"
 msgstr "휴일 카트 의무"
 
-#: .\golf\models.py:284
+#: .\golf\models.py:308
 msgid "Weekdays minimum in advance"
 msgstr "평일 예약가능 최소일수"
 
-#: .\golf\models.py:290
+#: .\golf\models.py:314
 msgid "Weekdays maximum in advance"
 msgstr "평일 예약가능 최대일수"
 
-#: .\golf\models.py:296
+#: .\golf\models.py:320
 msgid "Weekend minimum in advance"
 msgstr "휴일 예약가능 최소일수"
 
-#: .\golf\models.py:302
+#: .\golf\models.py:326
 msgid "Weekend maximum in advance"
 msgstr "휴일 예약가능 최대일수"
 
-#: .\golf\models.py:308
+#: .\golf\models.py:332
 msgid "Latitude"
 msgstr "위도"
 
-#: .\golf\models.py:315
+#: .\golf\models.py:339
 msgid "Longitude"
 msgstr "경도"
 
-#: .\golf\models.py:328
+#: .\golf\models.py:352
 msgid "Club status"
 msgstr "운영여부"
 
-#: .\golf\models.py:336
+#: .\golf\models.py:359
+msgid "Golf club"
+msgstr ""
+
+#: .\golf\models.py:360
 msgid "Golf clubs"
 msgstr "골프장"
 
