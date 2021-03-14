@@ -248,8 +248,23 @@ class Club(model_utils_models.TimeStampedModel):
         db_index=True,
     )
 
-    max_pax = models.IntegerField(
-        verbose_name=_('Max PAX'),
+    weekday_min_pax = models.IntegerField(
+        verbose_name=_('Weekday minimum PAX'),
+        default=1,
+    )
+
+    weekday_max_pax = models.IntegerField(
+        verbose_name=_('Weekday maximum PAX'),
+        default=4,
+    )
+
+    holiday_min_pax = models.IntegerField(
+        verbose_name=_('holiday minimum PAX'),
+        default=1,
+    )
+
+    holiday_max_pax = models.IntegerField(
+        verbose_name=_('holiday maximum PAX'),
         default=4,
     )
 

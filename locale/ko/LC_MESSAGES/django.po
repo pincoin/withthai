@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-12 16:04+0700\n"
+"POT-Creation-Date: 2021-03-14 14:41+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgstr "일본어"
 msgid "Chinese"
 msgstr "중국어"
 
-#: .\golf\admin.py:43 .\golf\models.py:320
+#: .\golf\admin.py:43 .\golf\models.py:335
 msgid "Golf club"
 msgstr ""
 
@@ -67,11 +67,10 @@ msgstr "슬러그"
 msgid ""
 "A short label containing only letters, numbers, underscores or hyphens for "
 "URL"
-msgstr ""
-"영문, 숫자, 밑줄, 하이픈으로 이루어진 짧은 URL"
+msgstr "영문, 숫자, 밑줄, 하이픈으로 이루어진 짧은 URL"
 
 #: .\golf\models.py:33 .\golf\models.py:79 .\golf\models.py:125
-#: .\golf\models.py:307
+#: .\golf\models.py:322
 msgid "Position"
 msgstr "위치"
 
@@ -204,46 +203,58 @@ msgid "Cart fee"
 msgstr "카트피"
 
 #: .\golf\models.py:252
-msgid "Max PAX"
-msgstr "최대인원"
+msgid "Weekday minimum PAX"
+msgstr "평일 최소인원"
 
 #: .\golf\models.py:257
+msgid "Weekday maximum PAX"
+msgstr "평일 최대인원"
+
+#: .\golf\models.py:262
+msgid "holiday minimum PAX"
+msgstr "휴일 최소인원"
+
+#: .\golf\models.py:267
+msgid "holiday maximum PAX"
+msgstr "휴일 최대인원"
+
+#: .\golf\models.py:272
 msgid "Require golf cart"
 msgstr "카트 의무"
 
-#: .\golf\models.py:263
+#: .\golf\models.py:278
 msgid "Require golf cart on holidays"
 msgstr "휴일 카트 의무"
 
-#: .\golf\models.py:269
+#: .\golf\models.py:284
 msgid "Weekdays minimum in advance"
 msgstr "평일 예약가능 최소일수"
 
-#: .\golf\models.py:275
+#: .\golf\models.py:290
 msgid "Weekdays maximum in advance"
 msgstr "평일 예약가능 최대일수"
 
-#: .\golf\models.py:281
+#: .\golf\models.py:296
 msgid "Weekend minimum in advance"
 msgstr "휴일 예약가능 최소일수"
 
-#: .\golf\models.py:287
+#: .\golf\models.py:302
 msgid "Weekend maximum in advance"
 msgstr "휴일 예약가능 최대일수"
 
-#: .\golf\models.py:293
+#: .\golf\models.py:308
 msgid "Latitude"
 msgstr "위도"
 
-#: .\golf\models.py:300
+#: .\golf\models.py:315
 msgid "Longitude"
 msgstr "경도"
 
-#: .\golf\models.py:313
+#: .\golf\models.py:328
 msgid "Club status"
 msgstr "운영여부"
 
-#: .\golf\models.py:321
+#: .\golf\models.py:336
 msgid "Golf clubs"
 msgstr "골프장"
 
