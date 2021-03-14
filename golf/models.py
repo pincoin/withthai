@@ -293,7 +293,7 @@ class Club(model_utils_models.TimeStampedModel):
     )
 
     cart_compulsory_pax = models.IntegerField(
-        verbose_name=_('Require golf cart'),
+        verbose_name=_('Require golf cart pax+'),
         default=0,
         db_index=True,
     )
